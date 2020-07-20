@@ -21,8 +21,8 @@ class ModuleMsg(models.Model):
     alarm_and_status = models.BigIntegerField()
     assembly_revision = models.CharField(max_length=4)
     serial_no = models.CharField(db_index=True, max_length=16)
-    master_software_version = models.CharField(max_length=4)
-    slave_software_version = models.CharField(max_length=4)
+    main_software_version = models.CharField(max_length=4)
+    subordinate_software_version = models.CharField(max_length=4)
     max_front_power_conn_temp = models.IntegerField()
 
     # Flags
@@ -72,8 +72,8 @@ class ModuleMsg(models.Model):
         'alarm_and_status': '80000000', # Temperature Fault only
         'assembly_revision': '000',
         'serial_no': '1311250000800',
-        'master_software_version': '0501',
-        'slave_software_version': '0496',
+        'main_software_version': '0501',
+        'subordinate_software_version': '0496',
         'max_front_power_conn_temp': '029'
     }
 

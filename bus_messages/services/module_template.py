@@ -22,8 +22,8 @@ class ModuleTemplate(MessageTemplate):
         'alarm_and_status',
         'assembly_revision',
         'serial_no',
-        'master_software_version',
-        'slave_software_version',
+        'main_software_version',
+        'subordinate_software_version',
         'max_front_power_conn_temp'
     ]
 
@@ -71,8 +71,8 @@ class ModuleTemplate(MessageTemplate):
         'alarm_and_status': '80000000',
         'assembly_revision': '000',
         'serial_no': '1311250000800',
-        'master_software_version': '0501',
-        'slave_software_version': '0496',
+        'main_software_version': '0501',
+        'subordinate_software_version': '0496',
         'max_front_power_conn_temp': '029'
     }
 

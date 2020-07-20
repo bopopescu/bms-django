@@ -15,8 +15,8 @@ class StringMsg(models.Model):
     alarm_and_status = models.BigIntegerField()
     bms_assembly_revision = models.IntegerField()
     bms_serial_no = models.CharField(max_length=16)
-    bms_master_software_version = models.CharField(max_length=4)
-    bms_slave_software_version = models.CharField(max_length=4)
+    bms_main_software_version = models.CharField(max_length=4)
+    bms_subordinate_software_version = models.CharField(max_length=4)
     watt_hours_to_discharge = models.IntegerField()
     watt_hours_to_charge = models.IntegerField()
     min_cell_millivolts = models.IntegerField()
@@ -58,8 +58,8 @@ class StringMsg(models.Model):
         'alarm_and_status': '80000000', # Temperature Fault only
         'bms_assembly_revision': '002',
         'bms_serial_no': '1607150018800',
-        'bms_master_software_version': '887',
-        'bms_slave_software_version': '842',
+        'bms_main_software_version': '887',
+        'bms_subordinate_software_version': '842',
         'watt_hours_to_discharge': '000509',
         'watt_hours_to_charge': '000451',
         'min_cell_millivolts': '003664',
